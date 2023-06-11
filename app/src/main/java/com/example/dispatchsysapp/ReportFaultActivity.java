@@ -223,7 +223,24 @@ public class ReportFaultActivity extends AppCompatActivity {
                         JSONObject jsonObject1 = jsonArray.getJSONObject(i);
                         String id = jsonObject1.getString("code");
                         String description = jsonObject1.getString("faultDescribe");
-                        String status = jsonObject1.getString("status");
+                        String statusCode = jsonObject1.getString("status");
+                        String status = "";
+                        switch (statusCode){
+                            case "0":
+                                status="未接单";
+                                break;
+
+                            case "1":
+                                status="正在处理";
+                                break;
+
+                            case "2":
+                                status="已解决";
+                                break;
+
+                            default:break;
+
+                        }
 
                         FaultDocument faultDocument = new FaultDocument(id,description,status);
                         faultDocuments.add(faultDocument);
