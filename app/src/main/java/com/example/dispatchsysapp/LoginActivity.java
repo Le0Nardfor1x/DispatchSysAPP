@@ -118,7 +118,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public synchronized void run() {
                 Looper.prepare();
-                String url = "http://125.216.247.120:8081/api/user/login";
+                String url = "http://111.230.44.64:8081/api/user/login";
                 JSONObject obj = new JSONObject();
                 try {
                     obj.put("userName",username);
