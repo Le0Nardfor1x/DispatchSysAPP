@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/register_account_edit"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:inputType="text"
+        android:digits="@string/alphabet_and_number"
+        android:hint="请设置注册账号:"
+        android:textSize="15sp"/>
+    <EditText
+        android:id="@+id/register_password_edit"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:inputType="textPassword"
+        android:digits="@string/alphabet_and_number"
+        android:hint="请设置注册密码:"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/register_second_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:text="注册"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/register_back_login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:text="返回"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
