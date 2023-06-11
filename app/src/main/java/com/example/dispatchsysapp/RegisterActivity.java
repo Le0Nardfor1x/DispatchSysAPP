@@ -69,7 +69,7 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void run() {
                 Looper.prepare();
-                String url = "http://125.216.247.120:8081/api/user/register";
+                String url = "http://111.230.44.64:8081/api/user/register";
                 JSONObject obj = new JSONObject();
                 try {
                     obj.put("username",username);
