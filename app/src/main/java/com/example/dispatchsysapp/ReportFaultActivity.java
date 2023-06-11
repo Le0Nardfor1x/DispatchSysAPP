@@ -173,7 +173,7 @@ public class ReportFaultActivity extends AppCompatActivity {
             @Override
             public void run() {
                 Looper.prepare();
-                String url = "http://125.216.247.120:8081/api/order";
+                String url = "http://111.230.44.64:8081/api/order";
                 JSONObject obj = new JSONObject();
                 try {
                     obj.put("faultDescribe",description);
