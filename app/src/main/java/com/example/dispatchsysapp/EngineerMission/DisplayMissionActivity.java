@@ -106,7 +106,7 @@ public class DisplayMissionActivity extends AppCompatActivity {
                 Looper.prepare();
                 try {
                     OkHttpClient okHttpClient = new OkHttpClient();
-                    String url = "http://125.216.247.120:8081/api/order/worker/now";
+                    String url = "http://111.230.44.64:8081/api/order/worker/now";
                     Request request = new Request.Builder().url(url).
                             addHeader("Authorization",token).build();
                     Response response = okHttpClient.newCall(request).execute();
