@@ -248,7 +248,7 @@ public class EngineerManageActivity extends AppCompatActivity implements AMapLoc
             @Override
             public void run() {
                 Looper.prepare();
-                String url = "http://125.216.247.120:8081/api/user/worker/position";
+                String url = "http://111.230.44.64:8081/api/user/worker/position";
 
                 MediaType type = MediaType.parse("application/json;charset=utf-8");
                 RequestBody requestBody = new FormBody.Builder()
